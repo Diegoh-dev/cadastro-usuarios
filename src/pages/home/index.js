@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import People from "../../assets/people.svg";
 import Arrow from "../../assets/arrow.svg";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import {
   Container,
@@ -42,13 +42,12 @@ const App = () => {
   }
 
   // goBack => navega para a pagina anterior
-  // push => navega para o caminho que for especificado.
+  // push => navega para o caminho que for especificado.(useNavigate > não precisa mais do push)
 
-  const history = useHistory();
+  const navigate = useNavigate();
   function navegandoParaProximaPage() {
-    history.push("/usuarios");
+    navigate("/usuarios");
   }
-  console.log(history);
   return (
     <Container>
       <Image src={People} alt="logo-image" />

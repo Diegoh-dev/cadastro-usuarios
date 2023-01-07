@@ -3,7 +3,7 @@ import Avatar from "../../assets/avatar.svg";
 import Arrow from "../../assets/arrow.svg";
 import Trash from "../../assets/trach.svg";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 import {
@@ -59,11 +59,11 @@ const Users = () => {
   // function changeInputAge(event) {
   //   setAge(event.target.value);
   // }
-  const history = useHistory()
+  const navigate = useNavigate()
 
   function goHistory(){
     // history.goBack()
-    history.push('/')
+    navigate('/')
   }
 
   return (
