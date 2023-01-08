@@ -4,15 +4,16 @@ import Arrow from "../../assets/arrow.svg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+
 import {
   Container,
   Image,
-  ContainerItens,
-  H1,
   InputLabel,
   Input,
   Button,
 } from "./styles";
+import { H1 } from "../../components/Title/styles";
+import ContainerItens from "../../components/ContainerItens";
 
 const App = () => {
   const [users, setUser] = useState([]);
@@ -52,7 +53,9 @@ const App = () => {
     <Container>
       <Image src={People} alt="logo-image" />
       <ContainerItens>
-        <H1 ref={titulo}>Olá</H1>
+        <H1>
+        Olá
+        </H1>
         <InputLabel>Nome:</InputLabel>
         <Input placeholder="Nome" ref={InputName} />
         <InputLabel>Age:</InputLabel>

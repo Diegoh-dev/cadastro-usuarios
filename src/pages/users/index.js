@@ -9,11 +9,12 @@ import { useNavigate } from "react-router-dom";
 import {
   Container,
   Image,
-  ContainerItens,
-  H1,
   Button,
   User,
 } from "./styles";
+import { H1 } from "../../components/Title/styles";
+import { ContainerItens } from '../../components/ContainerItens/styles'
+
 
 const Users = () => {
   const [users, setUser] = useState([]);
@@ -69,8 +70,10 @@ const Users = () => {
   return (
     <Container>
       <Image src={Avatar} alt="logo-image" />
-      <ContainerItens>
-        <H1 ref={titulo}>Usuários</H1>
+      <ContainerItens isBlur={true}>
+      <H1>
+      Usuários
+      </H1>
         <ul>
           {users.map((user) => (
             <User key={user.id}>
