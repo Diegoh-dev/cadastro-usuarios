@@ -9,11 +9,11 @@ import { useNavigate } from "react-router-dom";
 import {
   Container,
   Image,
-  Button,
   User,
 } from "./styles";
 import { H1 } from "../../components/Title/styles";
 import { ContainerItens } from '../../components/ContainerItens/styles'
+import Button from "../../components/Button";
 
 
 const Users = () => {
@@ -62,7 +62,7 @@ const Users = () => {
   // }
   const navigate = useNavigate()
 
-  function goHistory(){
+  function goNavigate(){
     // history.goBack()
     navigate('/')
   }
@@ -85,7 +85,7 @@ const Users = () => {
           ))}
         </ul>
 {/* to='/' */}
-        <Button onClick={goHistory}>
+        <Button onClick={goNavigate} isReturn={true}>
         <img src={Arrow} alt="arrow" /> Voltar 
         </Button>
 

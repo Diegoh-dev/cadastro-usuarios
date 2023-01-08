@@ -44,34 +44,34 @@ export const Image = styled.img`
 // `;
 
 // export const Button = styled(Link)
-export const Button = styled.button`
-  width: 100%;
-  height: 74px;
-  background: transparent;
-  border-radius: 14px;
-  border: 1px solid #fff;
-  margin-top: 120px;
-  color: #fff;
-  font-size: 17px;
-  line-height: 28px;
-  cursor: pointer;
+// export const Button = styled.button`
+//   width: 100%;
+//   height: 74px;
+//   background: transparent;
+//   border-radius: 14px;
+//   border: 1px solid #fff;
+//   margin-top: 120px;
+//   color: #fff;
+//   font-size: 17px;
+//   line-height: 28px;
+//   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  &:hover {
-    opacity: 0.8;
-  }
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 20px;
+//   &:hover {
+//     opacity: 0.8;
+//   }
 
-  &:active {
-    opacity: 0.5;
-  }
+//   &:active {
+//     opacity: 0.5;
+//   }
 
-  img {
-    transform: rotateY(180deg);
-  }
-`;
+//   img {
+//     transform: rotateY(180deg);
+//   }
+// `;
 
 export const User = styled.li`
   display: flex;

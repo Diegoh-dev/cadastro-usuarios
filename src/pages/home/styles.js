@@ -63,30 +63,30 @@ export const Input = styled.input`
 
 //dessa forma o botão passa a ser um link, devido ao react route-dom
 // export const Button = styled(Link)
-export const Button = styled.button`
-  width: 100%;
-  height: 74px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 14px;
-  border: none;
-  margin-top: 130px;
+// export const Button = styled.button`
+//   width: 100%;
+//   height: 74px;
+//   background: rgba(0, 0, 0, 0.8);
+//   border-radius: 14px;
+//   border: none;
+//   margin-top: 130px;
 
-  color: #fff;
-  font-size: 17px;
-  line-height: 28px;
-  cursor: pointer;
+//   color: #fff;
+//   font-size: 17px;
+//   line-height: 28px;
+//   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 20px;
 
-  &:hover {
-    opacity: 0.8;
-  }
+//   &:hover {
+//     opacity: 0.8;
+//   }
 
-  &:active {
-    opacity: 0.5;
-  }
-`;
+//   &:active {
+//     opacity: 0.5;
+//   }
+// `;
 
